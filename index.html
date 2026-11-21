@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe4ef">
+  <title>For Anju 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+  <header class="hero">
+    <nav><span class="brand">♡ A little world for Anju</span><button id="musicBtn" class="music-btn">▶ Play music</button></nav>
+    <div class="hero-content">
+      <p class="eyebrow">A SPECIAL DAY • A SPECIAL PERSON</p>
+      <h1>Happy Birthday,<br><span>Anju</span> 💗</h1>
+      <p class="subtitle">Every picture holds a memory. Every memory holds a little piece of my heart.</p>
+      <div id="countdown" class="countdown">Loading countdown…</div>
+      <a class="primary-btn" href="#memories">Open your surprise ↓</a>
+    </div>
+    <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <p class="eyebrow">MADE WITH LOVE</p>
+      <h2>To my favourite person</h2>
+      <p class="section-copy">This little website is a collection of moments, smiles, and words I never want you to forget. I hope it makes you smile as much as you make me smile.</p>
+    </section>
+
+    <section id="memories" class="section">
+      <p class="eyebrow">OUR LITTLE TIME CAPSULE</p>
+      <h2>Beautiful memories 📸</h2>
+      <p class="hint">Add your pictures in the <b>photos</b> folder and name them photo1.jpg, photo2.jpg … photo50.jpg.</p>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section class="section letters-section">
+      <p class="eyebrow">OPEN WHENEVER YOU NEED A SMILE</p>
+      <h2>Little letters for you 💌</h2>
+      <div class="letter-grid">
+        <button class="letter" data-letter="You make ordinary days feel special. Thank you for being exactly who you are. Never forget how loved and appreciated you are. 💗">💌<span>Open when you need a smile</span></button>
+        <button class="letter" data-letter="If I could keep one moment forever, it would be one where you are laughing. Your happiness is one of my favourite things. 🌷">🌸<span>Open when you miss me</span></button>
+        <button class="letter" data-letter="A reminder: you are strong, beautiful, capable, and so much more special than you realise. I am always cheering for you. ✨">⭐<span>Open on a difficult day</span></button>
+      </div>
+    </section>
+
+    <section class="section voice-section">
+      <p class="eyebrow">A MESSAGE FROM ME</p>
+      <h2>Listen to this 🎧</h2>
+      <p class="section-copy">Add your recorded voice message as <b>message.mp3</b> inside the <b>voice</b> folder.</p>
+      <audio controls preload="none"><source src="voice/message.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+    </section>
+
+    <section class="section wish-section">
+      <div class="wish-card">
+        <p class="eyebrow">ONE LAST SURPRISE</p>
+        <h2>Make a birthday wish ✨</h2>
+        <p>Close your eyes, make a wish, and tap the button.</p>
+        <button id="wishBtn" class="primary-btn">Send some birthday magic 🎉</button>
+        <p id="wishMessage" class="wish-message"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with lots of love for Anju ♡</footer>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <button id="closeLightbox" class="close-btn" aria-label="Close">×</button>
+    <img id="lightboxImg" src="" alt="A special memory">
+  </div>
+  <div id="letterModal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-card"><button id="closeLetter" class="close-btn" aria-label="Close">×</button><div class="modal-heart">💗</div><p id="letterText"></p></div>
+  </div>
+
+  <audio id="backgroundMusic" loop preload="none"><source src="music/song.mp3" type="audio/mpeg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
